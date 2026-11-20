@@ -8,6 +8,8 @@ ARG VERSION
 
 RUN apk add --no-cache tini ${PROGRAM}=${VERSION}
 
+ENV CONFIG_FILE=/etc/postgresql/postgresql.conf
+
 ENV PROGRAM=${PROGRAM}
 ENV VERSION=${VERSION}
 
