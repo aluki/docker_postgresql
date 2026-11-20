@@ -11,4 +11,4 @@ RUN apk add --no-cache tini ${PROGRAM}=${VERSION}
 ENV PROGRAM=${PROGRAM}
 ENV VERSION=${VERSION}
 
-CMD ["tini", "--", "postgres", "--config-file", "/etc/postgres/postgresql.conf"]
+CMD ["tini", "--", "postgres", "--config-file=/etc/postgresql/postgresql.conf"]
