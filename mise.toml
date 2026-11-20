@@ -3,4 +3,5 @@ lockfile = true
 
 [tools]
 "github:genuinetools/img" = "0"
+pre-commit = "4"
 task = "3"
